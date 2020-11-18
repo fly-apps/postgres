@@ -1,0 +1,29 @@
+# fly.toml file generated for postgres-example on 2020-11-17T19:09:55-06:00
+
+app = "postgres-example"
+
+[experimental]
+private_network = true
+
+[build]
+image = "postgres:13.1"
+
+[mount]
+source = "postgres"
+destination = "/var/lib/postgresql/"
+
+[[services]]
+  internal_port = 5432
+  protocol = "tcp"
+
+[services.concurrency]
+  hard_limit = 25
+  soft_limit = 20
+
+[[services.ports]]
+  handlers = ["tls"]
+  port = "10000"
+
+[[services.tcp_checks]]
+  interval = 10000
+  timeout = 2000
