@@ -10,6 +10,8 @@ Postgres is a useful database to have as part of your Fly installation. To make 
 
 The resulting Postgresql installation will available over the Fly 6PN internal network to other applications and to users who have configured a Fly Wireguard VPN on their local system.
 
+This Postgres configuration is good for development and small services. For mission-critical workloads, you'll want a HA configuration.
+
 ## Initialize the Fly app
 
 Create your `fly.toml` file by importing the template from the repository. Run:
