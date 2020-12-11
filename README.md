@@ -48,7 +48,9 @@ When 6PN private networking is enabled for an app, the Postgres instance will be
 
 If you have configured Fly's Wireguard, then you can securely connect to the Postgres server using that. The address of the server will be `<appname>.internal`. For example, your first connection to your new Postgresql with psql would be:
 
-`psql postgres://postgres:@appname.internal/
+`psql postgres://postgres:@appname.internal/`
+
+
 
 
 
