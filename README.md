@@ -1,5 +1,9 @@
 # Postgres on Fly
 
+Deploy a Postgres database on Fly, ready for your Fly apps.
+
+<!---- cut here --->
+
 # Rationale
 
 Postgres is a useful database to have as part of your Fly installation. To make it simple to install, this example takes you through all the steps necessary. 
