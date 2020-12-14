@@ -57,8 +57,14 @@ If you have configured Fly's Wireguard, then you can securely connect to the Pos
 `psql postgres://postgres:@appname.internal/`
 
 
+## Notes
 
+* This configuration has no direct external connectivity and is specifically for the use of other Fly apps
+* This configuration is good for development and small services.
 
+## Discuss
+
+* You can discuss this example on the [postgres example topic](https://community.fly.io/t/new-postgres-example/458) on community.fly.io.
 
 
 
